@@ -11529,13 +11529,6 @@ section.resume-section .resume-section-content {
 }
 
 /*  Tabs*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
-*, *:before, *:after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 main {
   min-width: 320px;
@@ -11566,25 +11559,9 @@ label {
 }
 
 label:before {
-  font-family: fontawesome;
+  font-family: var(--fa-font-solid);
   font-weight: normal;
   margin-right: 10px;
-}
-
-label[for*='1']:before {
-  content: '\f1cb';
-}
-
-label[for*='2']:before {
-  content: '\f17d';
-}
-
-label[for*='3']:before {
-  content: '\f16b';
-}
-
-label[for*='4']:before {
-  content: '\f1a9';
 }
 
 label:hover {
@@ -11608,7 +11585,7 @@ input:checked + label {
 
 @media screen and (max-width: 650px) {
   label {
-    font-size: 0;
+    display: block;
   }
 
   label:before {
